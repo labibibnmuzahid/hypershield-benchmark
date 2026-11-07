@@ -15,6 +15,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Circle, FancyBboxPatch, Polygon, Wedge
+from PIL import Image
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 RES = os.path.join(ROOT, "results")
@@ -116,10 +117,12 @@ def main():
         ax.set_axisbelow(True)
 
     os.makedirs(OUT, exist_ok=True)
-    for ext in ("png", "pdf", "tif"):
-        kw = {"pil_kwargs": {"compression": "tiff_lzw"}} if ext == "tif" else {}
-        fig.savefig(os.path.join(OUT, f"Graphical_Abstract.{ext}"), dpi=300, facecolor="white", **kw)
+    for ext in ("png", "pdf"):
+        fig.savefig(os.path.join(OUT, f"Graphical_Abstract.{ext}"), dpi=300, facecolor="white")
     plt.close(fig)
+    # submission systems expect a flat RGB TIFF, so the alpha channel is dropped
+    with Image.open(os.path.join(OUT, "Graphical_Abstract.png")) as im:
+        im.convert("RGB").save(os.path.join(OUT, "Graphical_Abstract.tif"), compression="tiff_lzw", dpi=(300, 300))
     print("graphical abstract written (3000 x 1200 px)")
 
 
