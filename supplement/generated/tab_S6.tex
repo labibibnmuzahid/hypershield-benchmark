@@ -1,0 +1,28 @@
+\begin{table}[!htbp]
+\caption{Credibility diagnostics of the stated position covariance, fused configuration, medium maneuver level.}
+\label{tab:S6}
+\centering\footnotesize\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Quantity & EKF-CV & UKF-CV & EKF-CA & IMM-CV/CA \\
+\midrule
+Epochs within 10 s after a false association (\%) & 18.1 & 18.1 & 18.2 & 16.6 \\
+Normalized ANEES after a false association & 9.42 & 9.28 & 9.55 & 8.22 \\
+Normalized ANEES, all other epochs & 1.07 & 1.07 & 1.10 & 1.12 \\
+$C_{95}$ after a false association & 0.773 & 0.774 & 0.728 & 0.749 \\
+$C_{95}$, all other epochs & 0.965 & 0.965 & 0.954 & 0.936 \\
+Share of summed NEES after a false association (\%) & 66.1 & 65.8 & 65.9 & 59.5 \\
+Share of updates that used a clutter detection (\%) & 1.43 & 1.43 & 1.52 & 1.33 \\
+Median normalized NEES & 0.71 & 0.71 & 0.76 & 0.83 \\
+Share of summed NEES in the worst 5\% of epochs (\%) & 69.3 & 69.0 & 67.0 & 59.4 \\
+$C_{50}$ (nominal 0.50) & 0.546 & 0.546 & 0.515 & 0.477 \\
+$C_{68}$ (nominal 0.68) & 0.713 & 0.713 & 0.682 & 0.644 \\
+$C_{90}$ (nominal 0.90) & 0.894 & 0.894 & 0.872 & 0.856 \\
+$C_{95}$ (nominal 0.95) & 0.930 & 0.931 & 0.913 & 0.905 \\
+$C_{99}$ (nominal 0.99) & 0.958 & 0.958 & 0.947 & 0.952 \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\parbox{\textwidth}{\footnotesize A false association is an update (or a track initiation) that used a clutter detection. Normalized NEES is NEES/3, so its consistent mean is 1. $C_\alpha$: empirical coverage of the nominal $\alpha$ ellipsoid over all scored epochs.}
+\end{table}

@@ -1,0 +1,30 @@
+\begin{table}[!htbp]
+\caption{Computational cost of each cell of the main evaluation.}
+\label{tab:S12}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+ & & \multicolumn{3}{c}{$\mu$s per filter cycle and run} & \multicolumn{3}{c}{Tracker CPU time (s)} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Sensing & Estimator & Low & Medium & High & Low & Medium & High \\
+\midrule
+IR only & EKF-CV & 5.7 & 6.7 & 5.1 & 1.37 & 1.62 & 1.23 \\
+IR only & UKF-CV & 8.8 & 8.3 & 9.6 & 2.12 & 1.99 & 2.31 \\
+IR only & EKF-CA & 7.4 & 7.6 & 7.4 & 1.77 & 1.82 & 1.77 \\
+IR only & IMM-CV/CA & 16.0 & 16.7 & 14.9 & 3.84 & 4.01 & 3.58 \\
+\midrule
+Radar only & EKF-CV & 2.3 & 1.7 & 2.2 & 0.55 & 0.40 & 0.52 \\
+Radar only & UKF-CV & 3.4 & 3.0 & 3.0 & 0.81 & 0.71 & 0.72 \\
+Radar only & EKF-CA & 2.8 & 2.8 & 2.3 & 0.66 & 0.68 & 0.56 \\
+Radar only & IMM-CV/CA & 5.9 & 6.1 & 5.3 & 1.41 & 1.47 & 1.27 \\
+\midrule
+Fused & EKF-CV & 8.0 & 7.7 & 6.3 & 1.92 & 1.85 & 1.51 \\
+Fused & UKF-CV & 11.4 & 10.6 & 9.6 & 2.74 & 2.54 & 2.30 \\
+Fused & EKF-CA & 9.5 & 9.3 & 8.0 & 2.29 & 2.23 & 1.93 \\
+Fused & IMM-CV/CA & 20.2 & 18.8 & 18.4 & 4.86 & 4.51 & 4.42 \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\parbox{\textwidth}{\footnotesize Process CPU time of the tracker for 500 runs $\times$ 481 cycles, measured on one core with the vectorized Python implementation (scenario and detection generation excluded). Total over the 36 cells: 70.3 s. These figures compare estimators within one implementation and are not real-time performance claims.}
+\end{table}

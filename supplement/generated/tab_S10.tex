@@ -1,0 +1,46 @@
+\begin{table}[!htbp]
+\caption{Complete process-noise tuning grid (fused configuration, medium maneuvers, 200 tuning runs disjoint from all evaluation runs).}
+\label{tab:S10}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrrl@{}}
+\toprule
+Estimator & Setting & Mean OSPA (km) & Custody (\%) & ANEES & $C_{95}$ & \\
+\midrule
+EKF-CV & $q_v = 10^{-5}$ & 3.18 & 56.7 & 20.93 & 0.343 &  \\
+EKF-CV & $q_v = 3\times10^{-5}$ & 2.59 & 65.1 & 12.65 & 0.431 &  \\
+EKF-CV & $q_v = 10^{-4}$ & 1.70 & 80.1 & 4.80 & 0.690 &  \\
+EKF-CV & $q_v = 3\times10^{-4}$ & 1.48 & 84.2 & 2.93 & 0.884 &  \\
+\textbf{EKF-CV} & $q_v = 10^{-3}$ & \textbf{1.45} & \textbf{84.7} & \textbf{2.39} & \textbf{0.932} & selected \\
+EKF-CV & $q_v = 3\times10^{-3}$ & 1.50 & 83.7 & 2.35 & 0.930 &  \\
+EKF-CV & $q_v = 10^{-2}$ & 1.58 & 81.7 & 2.59 & 0.917 &  \\
+\midrule
+EKF-CA & $q_a = 10^{-7}$ & 2.46 & 68.3 & 9.45 & 0.546 &  \\
+EKF-CA & $q_a = 10^{-6}$ & 1.59 & 82.1 & 3.32 & 0.801 &  \\
+\textbf{EKF-CA} & $q_a = 10^{-5}$ & \textbf{1.52} & \textbf{83.5} & \textbf{2.39} & \textbf{0.914} & selected \\
+EKF-CA & $q_a = 10^{-4}$ & 1.67 & 81.0 & 2.61 & 0.909 &  \\
+EKF-CA & $q_a = 10^{-3}$ & 2.13 & 74.3 & 4.20 & 0.864 &  \\
+\midrule
+\textbf{IMM-CV/CA} & $q_v = 10^{-5}$, $q_a = 10^{-5}$, $p_s = 0.90$ & \textbf{1.41} & \textbf{85.2} & \textbf{2.22} & \textbf{0.905} & selected \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-5}$, $p_s = 0.95$ & 1.41 & 85.1 & 2.18 & 0.904 &  \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-5}$, $p_s = 0.98$ & 1.43 & 84.8 & 2.27 & 0.893 &  \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-4}$, $p_s = 0.90$ & 1.44 & 84.6 & 2.09 & 0.928 &  \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-4}$, $p_s = 0.95$ & 1.44 & 84.6 & 2.14 & 0.913 &  \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-4}$, $p_s = 0.98$ & 1.47 & 84.0 & 2.38 & 0.880 &  \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-3}$, $p_s = 0.90$ & 1.42 & 84.7 & 1.90 & 0.939 &  \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-3}$, $p_s = 0.95$ & 1.45 & 84.5 & 2.06 & 0.917 &  \\
+IMM-CV/CA & $q_v = 10^{-5}$, $q_a = 10^{-3}$, $p_s = 0.98$ & 1.49 & 83.8 & 2.47 & 0.865 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-5}$, $p_s = 0.90$ & 1.41 & 85.0 & 2.23 & 0.912 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-5}$, $p_s = 0.95$ & 1.41 & 85.1 & 2.14 & 0.913 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-5}$, $p_s = 0.98$ & 1.42 & 84.8 & 2.24 & 0.906 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-4}$, $p_s = 0.90$ & 1.44 & 84.6 & 2.08 & 0.930 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-4}$, $p_s = 0.95$ & 1.44 & 84.7 & 2.09 & 0.923 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-4}$, $p_s = 0.98$ & 1.46 & 84.3 & 2.26 & 0.903 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-3}$, $p_s = 0.90$ & 1.42 & 84.6 & 1.89 & 0.940 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-3}$, $p_s = 0.95$ & 1.45 & 84.5 & 2.05 & 0.927 &  \\
+IMM-CV/CA & $q_v = 10^{-4}$, $q_a = 10^{-3}$, $p_s = 0.98$ & 1.46 & 84.3 & 2.23 & 0.896 &  \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\parbox{\textwidth}{\footnotesize $q_v$ in km$^2$/s$^3$, $q_a$ in km$^2$/s$^5$. The setting with the lowest mean OSPA was selected for each estimator; UKF-CV uses the EKF-CV value. Rows in bold are the selected settings.}
+\end{table}

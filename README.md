@@ -12,7 +12,7 @@ This is the simulation code behind *"Uncertainty-aware space–ground sensor fus
 | 4.1 | `hsbench/trajectory.py` | Mach 5–8 glide trajectories on a spherical Earth: skip-like altitude profile, piecewise-constant lateral command with a 4 s lag, heading hold, 0.05 s Euler integration, 1 Hz output |
 | 4.2 | `hsbench/sensors.py` | Walker 48/6/1 constellation at 1000 km and 55°. Visibility (Earth occlusion, under 4500 km), K = 3 greedy D-optimal tasking (Eq. 7), nadir-frame angle measurements (Eq. 8), Pd 0.9, Markov outages (20%, mean 25 s), Poisson clutter in a ±2 mrad box |
 | 4.3 | `hsbench/sensors.py` | Ground radar at 30° N 0° E with a 10 m mast: range/azimuth/elevation, 4/3-Earth horizon and under 1500 km, Pd 0.9, Poisson clutter in a ±3 km × ±6 mrad × ±6 mrad box |
-| 5.1–5.2 | `hsbench/filters.py` | CV and CA models (Eqs. 9–10). EKF-CV, UKF-CV (2n points, α=1, β=0, κ=0, which is the cubature rule), EKF-CA, and a two-model IMM in nine-state space with the CV mode resetting acceleration. Joseph-form updates |
+| 5.1–5.2 | `hsbench/filters.py` | CV and CA models (Eqs. 9–10). EKF-CV, UKF-CV (2n points, α=1, β=0, κ=0, which is the cubature rule), EKF-CA, and a two-model IMM in nine-state space with the CV mode resetting acceleration. Joseph-form EKF updates |
 | 5.3–5.4 | `hsbench/tracker.py` | χ²(0.999) gating, nearest-neighbour association, sequential IR-then-radar updates. Radar or IR-stereo initiation (closest approach, under 2 km, 5–120 km altitude, 3 Gauss–Newton iterations, inverse-Fisher covariance). Confirmation after 3 hits in 10 s. Deletion on a 20 s coast, √tr(P_pos) > 30 km, or association ratio < 0.4 |
 | 6 | `hsbench/metrics.py` | OSPA (c = 10 km), custody, continuity, TTFT, RMSE, NEES/ANEES, coverage C_α, run-level bootstrap (2000 resamples), Wilcoxon signed-rank, Holm correction |
 | 6–7 | `run_experiments.py` | Tuning (seed 11, 200 runs), main evaluation (seeds 221–223, 500 runs per level, 36 cells = 18,000 tracker runs), sensitivity sweeps (seed 33, 300 runs), illustrative example (seed 44) |
@@ -28,7 +28,12 @@ python run_experiments.py all             # tune -> main -> sweeps -> example, ~
 python analysis_tables.py                 # tables + results/key_numbers.json
 python analysis_conditional.py            # credibility diagnostics (Section 7.4)
 python make_figs.py                       # figures/Figure_1..9 (.png 300 dpi + .pdf)
+python make_supplement.py                 # supplementary Tables S1-S12, Figures S1-S2, CSV files
+(cd supplement && pdflatex Supplementary_Material.tex && pdflatex Supplementary_Material.tex)
+python make_graphical_abstract.py         # supplement/Graphical_Abstract.(tif|pdf|png)
 ```
+
+A clean run of these commands reproduces every committed result file bit for bit and Figures 1–9 pixel for pixel; only the measured CPU times (`results/timing.json`) vary between machines.
 
 `python run_experiments.py all --quick` runs a smoke test with small run counts. The main evaluation reads the process-noise values picked by the tuning step from `results/tuned.json`. Nothing is hard-coded from the paper.
 
@@ -39,6 +44,9 @@ python make_figs.py                       # figures/Figure_1..9 (.png 300 dpi + 
 - `results/key_numbers.json`, `results/conditional.json`, `results/sweeps.json`: every number quoted in the text
 - `results/defaults.json`: the complete configuration of the main run
 - `figures/Figure_1` … `Figure_9`: ready to upload as separate files
+- `supplement/Supplementary_Material.pdf`: supplementary Tables S1–S13 and Figures S1–S2 (every cell, every paired test, credibility diagnostics per estimator, every sweep value, the full tuning grid, scenario statistics, timing, implementation choices and the verification tests)
+- `results/supplement/*.csv`: the supplementary tables as CSV files (columns described in `results/supplement/README.txt`)
+- `supplement/Graphical_Abstract.*`: graphical abstract built from the result files
 
 ## Verification (`tests/`)
 

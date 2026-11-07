@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+supplement/*.aux
+supplement/*.log
+supplement/*.out
+supplement/build.log

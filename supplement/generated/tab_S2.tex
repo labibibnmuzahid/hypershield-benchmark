@@ -1,0 +1,32 @@
+\begin{table}[!htbp]
+\caption{All sensing configurations and estimators at the medium (2 g) maneuver level (500 held-out runs each).}
+\label{tab:S2}
+\centering\footnotesize\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+Estimator & OSPA (km) & Custody & Contin. & Segments & TTFT & Ever & RMSE & ANEES & $C_{50}$ & $C_{95}$ \\
+ & [95\% CI] & (\%) & (\%) & per run & (s) & tracked (\%) & (km) & [95\% CI] & & \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{IR only}} \\
+EKF-CV & 2.21 [2.10, 2.32] & 75.5 & 83.2 & 3.94 & 4 & 100.0 & 4.02 & 3.18 [2.94, 3.43] & 0.547 & 0.916 \\
+UKF-CV & 2.20 [2.09, 2.32] & 75.5 & 83.2 & 3.94 & 4 & 100.0 & 4.02 & 3.15 [2.92, 3.39] & 0.547 & 0.916 \\
+EKF-CA & 2.32 [2.21, 2.44] & 73.6 & 83.0 & 4.37 & 4 & 100.0 & 4.74 & 3.22 [3.01, 3.46] & 0.508 & 0.891 \\
+IMM-CV/CA & 2.13 [2.02, 2.24] & 76.7 & 83.6 & 3.81 & 4 & 100.0 & 4.00 & 2.61 [2.45, 2.77] & 0.476 & 0.894 \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Radar only}} \\
+EKF-CV & 6.48 [6.36, 6.60] & 35.3 & 36.9 & 1.40 & 293.5 & 98.8 & 0.66 & 2.66 [2.30, 3.09] & 0.532 & 0.950 \\
+UKF-CV & 6.48 [6.37, 6.60] & 35.3 & 36.9 & 1.39 & 293.5 & 98.8 & 0.66 & 2.48 [2.15, 2.87] & 0.532 & 0.950 \\
+EKF-CA & 6.48 [6.37, 6.60] & 34.8 & 37.0 & 1.50 & 293 & 98.8 & 0.70 & 2.45 [2.15, 2.78] & 0.524 & 0.945 \\
+IMM-CV/CA & 6.48 [6.36, 6.59] & 35.3 & 37.0 & 1.40 & 293.5 & 98.8 & 0.66 & 2.48 [2.17, 2.84] & 0.474 & 0.927 \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Fused}} \\
+EKF-CV & 1.56 [1.48, 1.65] & 83.4 & 88.6 & 3.15 & 4 & 100.0 & 3.19 & 2.58 [2.39, 2.79] & 0.546 & 0.930 \\
+UKF-CV & 1.56 [1.48, 1.64] & 83.5 & 88.6 & 3.15 & 4 & 100.0 & 3.18 & 2.56 [2.36, 2.76] & 0.546 & 0.931 \\
+EKF-CA & 1.64 [1.56, 1.73] & 82.2 & 88.4 & 3.49 & 4 & 100.0 & 3.70 & 2.64 [2.46, 2.83] & 0.515 & 0.913 \\
+IMM-CV/CA & 1.51 [1.43, 1.59] & 84.1 & 88.9 & 3.07 & 4 & 100.0 & 3.23 & 2.30 [2.16, 2.46] & 0.477 & 0.905 \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\parbox{\textwidth}{\footnotesize OSPA: mean OSPA distance, cut-off 10 km. Custody: share of epochs with a confirmed track within 1 km. Contin.: share of epochs with a confirmed track. Segments: confirmed track segments per run. TTFT: median time to first track within 5 km (runs never tracked count as infinite; a median over an even number of runs can end in .5, which the paper rounds to whole seconds). Ever tracked: share of runs with at least one such track. RMSE: over epochs with a track. ANEES: normalized (ideal 1). $C_\alpha$: empirical coverage of the nominal $\alpha$ ellipsoid. Confidence intervals: run-level percentile bootstrap, 2000 resamples.}
+\end{table}

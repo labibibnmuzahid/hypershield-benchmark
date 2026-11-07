@@ -1,0 +1,40 @@
+\begin{table}[!htbp]
+\caption{All 24 paired comparisons of fused against single-sensor tracking (per-run OSPA, one Holm family).}
+\label{tab:S5}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lllrrrrr@{}}
+\toprule
+Maneuver & Estimator & Comparison & $\Delta$ OSPA (km) & $\Delta$ (\%) & Better (\%) & $p$ & Holm $p$ \\
+\midrule
+Low & EKF-CV & Fused vs IR only & $-0.667$ & $-31.3$ & 97.8 & $1.2\times10^{-79}$ & $1.3\times10^{-78}$ \\
+Low & EKF-CV & Fused vs Radar only & $-4.905$ & $-77.0$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+Low & UKF-CV & Fused vs IR only & $-0.670$ & $-31.4$ & 97.8 & $1.2\times10^{-79}$ & $1.3\times10^{-78}$ \\
+Low & UKF-CV & Fused vs Radar only & $-4.906$ & $-77.1$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+Low & EKF-CA & Fused vs IR only & $-0.709$ & $-31.3$ & 98.0 & $1.1\times10^{-80}$ & $1.3\times10^{-79}$ \\
+Low & EKF-CA & Fused vs Radar only & $-4.819$ & $-75.6$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+Low & IMM-CV/CA & Fused vs IR only & $-0.644$ & $-31.4$ & 97.4 & $5.3\times10^{-79}$ & $4.7\times10^{-78}$ \\
+Low & IMM-CV/CA & Fused vs Radar only & $-4.946$ & $-77.9$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+\midrule
+Medium & EKF-CV & Fused vs IR only & $-0.642$ & $-29.1$ & 97.0 & $2.0\times10^{-78}$ & $1.6\times10^{-77}$ \\
+Medium & EKF-CV & Fused vs Radar only & $-4.915$ & $-75.8$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+Medium & UKF-CV & Fused vs IR only & $-0.642$ & $-29.1$ & 97.0 & $2.2\times10^{-78}$ & $1.6\times10^{-77}$ \\
+Medium & UKF-CV & Fused vs Radar only & $-4.920$ & $-75.9$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+Medium & EKF-CA & Fused vs IR only & $-0.681$ & $-29.3$ & 97.0 & $2.3\times10^{-78}$ & $1.6\times10^{-77}$ \\
+Medium & EKF-CA & Fused vs Radar only & $-4.842$ & $-74.7$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+Medium & IMM-CV/CA & Fused vs IR only & $-0.616$ & $-29.0$ & 96.8 & $3.0\times10^{-77}$ & $6.1\times10^{-77}$ \\
+Medium & IMM-CV/CA & Fused vs Radar only & $-4.965$ & $-76.7$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+\midrule
+High & EKF-CV & Fused vs IR only & $-0.668$ & $-29.2$ & 95.6 & $5.7\times10^{-78}$ & $2.3\times10^{-77}$ \\
+High & EKF-CV & Fused vs Radar only & $-5.072$ & $-75.8$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+High & UKF-CV & Fused vs IR only & $-0.668$ & $-29.2$ & 95.6 & $5.7\times10^{-78}$ & $2.3\times10^{-77}$ \\
+High & UKF-CV & Fused vs Radar only & $-5.073$ & $-75.8$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+High & EKF-CA & Fused vs IR only & $-0.683$ & $-29.3$ & 95.2 & $2.0\times10^{-78}$ & $1.6\times10^{-77}$ \\
+High & EKF-CA & Fused vs Radar only & $-5.030$ & $-75.3$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+High & IMM-CV/CA & Fused vs IR only & $-0.655$ & $-29.4$ & 94.8 & $8.3\times10^{-77}$ & $8.3\times10^{-77}$ \\
+High & IMM-CV/CA & Fused vs Radar only & $-5.107$ & $-76.4$ & 100.0 & $1.3\times10^{-83}$ & $3.0\times10^{-82}$ \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\parbox{\textwidth}{\footnotesize $\Delta$: mean per-run OSPA difference, fused minus single-sensor; $\Delta$ (\%): relative to the single-sensor value. Better: share of runs in which fused tracking had the lower OSPA. $p$: two-sided Wilcoxon signed-rank test; Holm $p$: adjusted over the 24 comparisons.}
+\end{table}
