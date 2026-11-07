@@ -1,0 +1,642 @@
+{
+  "fusion": [
+    {
+      "maneuver": "low",
+      "estimator": "EKF-CV",
+      "baseline": "ir",
+      "delta": -0.6665059338187133,
+      "better": 0.978,
+      "rel": -0.31316323269917556,
+      "p": 1.2031357334182805e-79,
+      "p_holm": 1.3156432285486413e-78
+    },
+    {
+      "maneuver": "low",
+      "estimator": "EKF-CV",
+      "baseline": "radar",
+      "delta": -4.905245003229438,
+      "better": 1.0,
+      "rel": -0.7704120252063253,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "low",
+      "estimator": "UKF-CV",
+      "baseline": "ir",
+      "delta": -0.6700625494578611,
+      "better": 0.978,
+      "rel": -0.31442525244902486,
+      "p": 1.1960392986805831e-79,
+      "p_holm": 1.3156432285486413e-78
+    },
+    {
+      "maneuver": "low",
+      "estimator": "UKF-CV",
+      "baseline": "radar",
+      "delta": -4.90626027113095,
+      "better": 1.0,
+      "rel": -0.7705439263616473,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "low",
+      "estimator": "EKF-CA",
+      "baseline": "ir",
+      "delta": -0.7092767803416178,
+      "better": 0.98,
+      "rel": -0.3131313789147909,
+      "p": 1.0616955242739012e-80,
+      "p_holm": 1.2740346291286813e-79
+    },
+    {
+      "maneuver": "low",
+      "estimator": "EKF-CA",
+      "baseline": "radar",
+      "delta": -4.81928718007329,
+      "better": 1.0,
+      "rel": -0.7559524292724576,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "low",
+      "estimator": "IMM-CV/CA",
+      "baseline": "ir",
+      "delta": -0.6439536829426307,
+      "better": 0.974,
+      "rel": -0.31428620380813893,
+      "p": 5.263618118440332e-79,
+      "p_holm": 4.737256306596299e-78
+    },
+    {
+      "maneuver": "low",
+      "estimator": "IMM-CV/CA",
+      "baseline": "radar",
+      "delta": -4.946079480347691,
+      "better": 1.0,
+      "rel": -0.7787794000628075,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "EKF-CV",
+      "baseline": "ir",
+      "delta": -0.6417075637213688,
+      "better": 0.97,
+      "rel": -0.2908085574267099,
+      "p": 2.0188402621644402e-78,
+      "p_holm": 1.6121709842337488e-77
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "EKF-CV",
+      "baseline": "radar",
+      "delta": -4.915078205777275,
+      "better": 1.0,
+      "rel": -0.7584993756047584,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "UKF-CV",
+      "baseline": "ir",
+      "delta": -0.6419814954110741,
+      "better": 0.97,
+      "rel": -0.2912547461345206,
+      "p": 2.180402821189961e-78,
+      "p_holm": 1.6121709842337488e-77
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "UKF-CV",
+      "baseline": "radar",
+      "delta": -4.919882684331602,
+      "better": 1.0,
+      "rel": -0.7589959360059725,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "EKF-CA",
+      "baseline": "ir",
+      "delta": -0.6813477161319165,
+      "better": 0.97,
+      "rel": -0.29314968271388303,
+      "p": 2.327137411714373e-78,
+      "p_holm": 1.6121709842337488e-77
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "EKF-CA",
+      "baseline": "radar",
+      "delta": -4.841851961140636,
+      "better": 1.0,
+      "rel": -0.7466537078221855,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "IMM-CV/CA",
+      "baseline": "ir",
+      "delta": -0.6159102523278348,
+      "better": 0.968,
+      "rel": -0.28954604415553464,
+      "p": 3.0283616024165672e-77,
+      "p_holm": 6.0567232048331344e-77
+    },
+    {
+      "maneuver": "medium",
+      "estimator": "IMM-CV/CA",
+      "baseline": "radar",
+      "delta": -4.965398461940145,
+      "better": 1.0,
+      "rel": -0.7666619606556545,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "high",
+      "estimator": "EKF-CV",
+      "baseline": "ir",
+      "delta": -0.6684349581155498,
+      "better": 0.956,
+      "rel": -0.2918649821264903,
+      "p": 5.733586722015616e-78,
+      "p_holm": 2.2934346888062463e-77
+    },
+    {
+      "maneuver": "high",
+      "estimator": "EKF-CV",
+      "baseline": "radar",
+      "delta": -5.072275476236649,
+      "better": 1.0,
+      "rel": -0.757727782938468,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "high",
+      "estimator": "UKF-CV",
+      "baseline": "ir",
+      "delta": -0.6677016225113155,
+      "better": 0.956,
+      "rel": -0.2921564252595374,
+      "p": 5.733586722015616e-78,
+      "p_holm": 2.2934346888062463e-77
+    },
+    {
+      "maneuver": "high",
+      "estimator": "UKF-CV",
+      "baseline": "radar",
+      "delta": -5.072738632154294,
+      "better": 1.0,
+      "rel": -0.7582045248515026,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "high",
+      "estimator": "EKF-CA",
+      "baseline": "ir",
+      "delta": -0.6830427017240444,
+      "better": 0.952,
+      "rel": -0.2928732938262991,
+      "p": 2.015213730292186e-78,
+      "p_holm": 1.6121709842337488e-77
+    },
+    {
+      "maneuver": "high",
+      "estimator": "EKF-CA",
+      "baseline": "radar",
+      "delta": -5.029990335170213,
+      "better": 1.0,
+      "rel": -0.7530872708900019,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    },
+    {
+      "maneuver": "high",
+      "estimator": "IMM-CV/CA",
+      "baseline": "ir",
+      "delta": -0.6553293142605053,
+      "better": 0.948,
+      "rel": -0.2938687726860699,
+      "p": 8.302505899455712e-77,
+      "p_holm": 8.302505899455712e-77
+    },
+    {
+      "maneuver": "high",
+      "estimator": "IMM-CV/CA",
+      "baseline": "radar",
+      "delta": -5.107223550548573,
+      "better": 1.0,
+      "rel": -0.7643369222940141,
+      "p": 1.2647189486921487e-83,
+      "p_holm": 3.0353254768611567e-82
+    }
+  ],
+  "estimators": [
+    {
+      "maneuver": "low",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.07936165262311756,
+      "better": 0.806,
+      "rel": -0.037288717814423014,
+      "p": 1.8027476698645085e-32,
+      "p_holm": 5.047693475620624e-31
+    },
+    {
+      "maneuver": "low",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.08213069384162104,
+      "better": 0.81,
+      "rel": -0.038539632107269836,
+      "p": 1.0527581151584516e-33,
+      "p_holm": 3.2635501569912e-32
+    },
+    {
+      "maneuver": "low",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.2161688967399965,
+      "better": 0.866,
+      "rel": -0.09543420367163596,
+      "p": 1.950825120560032e-44,
+      "p_holm": 6.827887921960112e-43
+    },
+    {
+      "maneuver": "low",
+      "sensing": "ir",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": 0.002769041218503472,
+      "better": 0.542,
+      "rel": 0.0013010565329785583,
+      "p": 0.0073122630060754625,
+      "p_holm": 0.03656131503037731
+    },
+    {
+      "maneuver": "low",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.01597492462878161,
+      "better": 0.718,
+      "rel": -0.0025090029198695228,
+      "p": 1.4540309436363933e-29,
+      "p_holm": 3.9258835478182623e-28
+    },
+    {
+      "maneuver": "low",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.01620261810964898,
+      "better": 0.716,
+      "rel": -0.0025446731900893135,
+      "p": 4.4771696434026193e-29,
+      "p_holm": 1.1640641072846811e-27
+    },
+    {
+      "maneuver": "low",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.024053499066607763,
+      "better": 0.862,
+      "rel": -0.0037730270831522446,
+      "p": 1.160367674044502e-46,
+      "p_holm": 4.177323626560207e-45
+    },
+    {
+      "maneuver": "low",
+      "sensing": "radar",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": 0.00022769348086737029,
+      "better": 0.366,
+      "rel": 3.5761270967264555e-05,
+      "p": 5.77988571408541e-11,
+      "p_holm": 9.247817142536656e-10
+    },
+    {
+      "maneuver": "low",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.056809401747034846,
+      "better": 0.83,
+      "rel": -0.03886274094136774,
+      "p": 5.642172758889229e-33,
+      "p_holm": 1.6926518276667686e-31
+    },
+    {
+      "maneuver": "low",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.05602182732639048,
+      "better": 0.834,
+      "rel": -0.038344628195736204,
+      "p": 6.924613694184978e-34,
+      "p_holm": 2.215876382139193e-32
+    },
+    {
+      "maneuver": "low",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.1508457993410093,
+      "better": 0.858,
+      "rel": -0.09695504050593587,
+      "p": 1.7318456109157075e-40,
+      "p_holm": 5.888275077113406e-39
+    },
+    {
+      "maneuver": "low",
+      "sensing": "fused",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": -0.0007875744206443614,
+      "better": 0.524,
+      "rel": -0.0005387717479905893,
+      "p": 0.007545472172884175,
+      "p_holm": 0.03656131503037731
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.07947409146440215,
+      "better": 0.776,
+      "rel": -0.036016009781047825,
+      "p": 4.4009432759203505e-25,
+      "p_holm": 1.1002358189800876e-23
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.07703415616300552,
+      "better": 0.774,
+      "rel": -0.0349489257203225,
+      "p": 2.091258577785209e-24,
+      "p_holm": 5.019020586684501e-23
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.197073228368404,
+      "better": 0.794,
+      "rel": -0.08479070671224347,
+      "p": 3.369074551303278e-35,
+      "p_holm": 1.1117946019300818e-33
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "ir",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": -0.0024399353013966306,
+      "better": 0.564,
+      "rel": -0.00110572806887118,
+      "p": 1.2116244384671886e-05,
+      "p_holm": 9.692995507737509e-05
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.0033565239079970414,
+      "better": 0.532,
+      "rel": -0.0005179818472523339,
+      "p": 0.015798223538103985,
+      "p_holm": 0.047394670614311955
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.005447135471221891,
+      "better": 0.532,
+      "rel": -0.0008403358272541963,
+      "p": 0.02049572124203518,
+      "p_holm": 0.047394670614311955
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.008089263764812187,
+      "better": 0.726,
+      "rel": -0.0012474315266189607,
+      "p": 2.66542388582463e-21,
+      "p_holm": 5.597390160231723e-20
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "radar",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": 0.00209061156322485,
+      "better": 0.338,
+      "rel": 0.0003226250934266403,
+      "p": 4.195683419785381e-15,
+      "p_holm": 7.132661813635147e-14
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.05367678007086799,
+      "better": 0.76,
+      "rel": -0.034299910984880784,
+      "p": 5.583074696473333e-23,
+      "p_holm": 1.2841071801888666e-21
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.0509629130797662,
+      "better": 0.758,
+      "rel": -0.0326223003617036,
+      "p": 1.441555322350157e-22,
+      "p_holm": 3.1714217091703453e-21
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.13163576456432216,
+      "better": 0.786,
+      "rel": -0.08012482000667713,
+      "p": 9.747257580789366e-33,
+      "p_holm": 2.8267046984289163e-31
+    },
+    {
+      "maneuver": "medium",
+      "sensing": "fused",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": -0.002713866991101795,
+      "better": 0.562,
+      "rel": -0.0017341836842057162,
+      "p": 2.9315005386541005e-05,
+      "p_holm": 0.00020520503770578703
+    },
+    {
+      "maneuver": "high",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.06021315054388681,
+      "better": 0.684,
+      "rel": -0.026291428797823625,
+      "p": 3.8939372355876854e-09,
+      "p_holm": 4.6727246827052225e-08
+    },
+    {
+      "maneuver": "high",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.055418443619351054,
+      "better": 0.678,
+      "rel": -0.024248637168771354,
+      "p": 2.5979055692415363e-08,
+      "p_holm": 2.85769612616569e-07
+    },
+    {
+      "maneuver": "high",
+      "sensing": "ir",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.10220567242351841,
+      "better": 0.65,
+      "rel": -0.043823485493445655,
+      "p": 4.121173539584688e-10,
+      "p_holm": 5.769642955418563e-09
+    },
+    {
+      "maneuver": "high",
+      "sensing": "ir",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": -0.004794706924535766,
+      "better": 0.542,
+      "rel": -0.002093557546386556,
+      "p": 0.003578924716969849,
+      "p_holm": 0.021473548301819096
+    },
+    {
+      "maneuver": "high",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.012159432376917877,
+      "better": 0.658,
+      "rel": -0.0018164509754876625,
+      "p": 3.411515704544534e-20,
+      "p_holm": 6.823031409089068e-19
+    },
+    {
+      "maneuver": "high",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.00856121697426206,
+      "better": 0.656,
+      "rel": -0.0012796151977899788,
+      "p": 2.668576051066318e-19,
+      "p_holm": 5.070294497026004e-18
+    },
+    {
+      "maneuver": "high",
+      "sensing": "radar",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": 0.002740930418380338,
+      "better": 0.612,
+      "rel": 0.0004103705317373318,
+      "p": 7.079203559674189e-06,
+      "p_holm": 6.37128320370677e-05
+    },
+    {
+      "maneuver": "high",
+      "sensing": "radar",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": -0.0035982154026558185,
+      "better": 0.33,
+      "rel": -0.00053752360106678,
+      "p": 2.2006802006283968e-15,
+      "p_holm": 3.961224361131114e-14
+    },
+    {
+      "maneuver": "high",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CV",
+      "delta": -0.04710750668884251,
+      "better": 0.696,
+      "rel": -0.029046705677952832,
+      "p": 1.156823128033253e-10,
+      "p_holm": 1.7352346920498795e-09
+    },
+    {
+      "maneuver": "high",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "UKF-CV",
+      "delta": -0.04304613536854106,
+      "better": 0.692,
+      "rel": -0.026609081474128597,
+      "p": 1.1823811799231015e-09,
+      "p_holm": 1.5370955339000318e-08
+    },
+    {
+      "maneuver": "high",
+      "sensing": "fused",
+      "first": "IMM-CV/CA",
+      "second": "EKF-CA",
+      "delta": -0.07449228495997937,
+      "better": 0.622,
+      "rel": -0.045169571701320826,
+      "p": 6.533927387885346e-08,
+      "p_holm": 6.533927387885346e-07
+    },
+    {
+      "maneuver": "high",
+      "sensing": "fused",
+      "first": "UKF-CV",
+      "second": "EKF-CV",
+      "delta": -0.00406137132030145,
+      "better": 0.546,
+      "rel": -0.002504260269364164,
+      "p": 0.060904022126648374,
+      "p_holm": 0.060904022126648374
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "low_ir_EKF-CV": {
+    "cpu_s": 1.3709541950000002,
+    "us_per_cycle_run": 5.700433243243244
+  },
+  "low_ir_UKF-CV": {
+    "cpu_s": 2.1180403830000003,
+    "us_per_cycle_run": 8.806820719334722
+  },
+  "low_ir_EKF-CA": {
+    "cpu_s": 1.7696273510000002,
+    "us_per_cycle_run": 7.3581178835758845
+  },
+  "low_ir_IMM-CVCA": {
+    "cpu_s": 3.8369536230000003,
+    "us_per_cycle_run": 15.954069118503119
+  },
+  "low_radar_EKF-CV": {
+    "cpu_s": 0.550405918,
+    "us_per_cycle_run": 2.288590095634096
+  },
+  "low_radar_UKF-CV": {
+    "cpu_s": 0.8080534949999998,
+    "us_per_cycle_run": 3.359889792099791
+  },
+  "low_radar_EKF-CA": {
+    "cpu_s": 0.6632493300000002,
+    "us_per_cycle_run": 2.7577934719334727
+  },
+  "low_radar_IMM-CVCA": {
+    "cpu_s": 1.4149564119999996,
+    "us_per_cycle_run": 5.883394644490642
+  },
+  "low_fused_EKF-CV": {
+    "cpu_s": 1.9210191640000005,
+    "us_per_cycle_run": 7.987605671517674
+  },
+  "low_fused_UKF-CV": {
+    "cpu_s": 2.7448586210000006,
+    "us_per_cycle_run": 11.413133559251563
+  },
+  "low_fused_EKF-CA": {
+    "cpu_s": 2.2873683200000006,
+    "us_per_cycle_run": 9.510886985446989
+  },
+  "low_fused_IMM-CVCA": {
+    "cpu_s": 4.856935274,
+    "us_per_cycle_run": 20.195157064449063
+  },
+  "medium_ir_EKF-CV": {
+    "cpu_s": 1.6185695279999999,
+    "us_per_cycle_run": 6.730018827442827
+  },
+  "medium_ir_UKF-CV": {
+    "cpu_s": 1.989546117,
+    "us_per_cycle_run": 8.272541027027026
+  },
+  "medium_ir_EKF-CA": {
+    "cpu_s": 1.820926199,
+    "us_per_cycle_run": 7.571418706860707
+  },
+  "medium_ir_IMM-CVCA": {
+    "cpu_s": 4.0070045610000005,
+    "us_per_cycle_run": 16.661141625779628
+  },
+  "medium_radar_EKF-CV": {
+    "cpu_s": 0.40309674799999984,
+    "us_per_cycle_run": 1.6760779542619537
+  },
+  "medium_radar_UKF-CV": {
+    "cpu_s": 0.7142784639999995,
+    "us_per_cycle_run": 2.969972823284821
+  },
+  "medium_radar_EKF-CA": {
+    "cpu_s": 0.6790244900000006,
+    "us_per_cycle_run": 2.8233866528066556
+  },
+  "medium_radar_IMM-CVCA": {
+    "cpu_s": 1.4680490519999996,
+    "us_per_cycle_run": 6.104154062370061
+  },
+  "medium_fused_EKF-CV": {
+    "cpu_s": 1.847683462,
+    "us_per_cycle_run": 7.682675517671518
+  },
+  "medium_fused_UKF-CV": {
+    "cpu_s": 2.540833635000001,
+    "us_per_cycle_run": 10.564796819126824
+  },
+  "medium_fused_EKF-CA": {
+    "cpu_s": 2.2251647330000015,
+    "us_per_cycle_run": 9.252244212058217
+  },
+  "medium_fused_IMM-CVCA": {
+    "cpu_s": 4.509892537000001,
+    "us_per_cycle_run": 18.752151920997925
+  },
+  "high_ir_EKF-CV": {
+    "cpu_s": 1.232394524,
+    "us_per_cycle_run": 5.124301555093555
+  },
+  "high_ir_UKF-CV": {
+    "cpu_s": 2.3072309890000002,
+    "us_per_cycle_run": 9.593476045738045
+  },
+  "high_ir_EKF-CA": {
+    "cpu_s": 1.769562184,
+    "us_per_cycle_run": 7.357846918918918
+  },
+  "high_ir_IMM-CVCA": {
+    "cpu_s": 3.578704643,
+    "us_per_cycle_run": 14.880268785862787
+  },
+  "high_radar_EKF-CV": {
+    "cpu_s": 0.5218902710000002,
+    "us_per_cycle_run": 2.1700219168399175
+  },
+  "high_radar_UKF-CV": {
+    "cpu_s": 0.7243307359999998,
+    "us_per_cycle_run": 3.0117702120582113
+  },
+  "high_radar_EKF-CA": {
+    "cpu_s": 0.5633250280000004,
+    "us_per_cycle_run": 2.3423078087318103
+  },
+  "high_radar_IMM-CVCA": {
+    "cpu_s": 1.2654739189999997,
+    "us_per_cycle_run": 5.261845817047816
+  },
+  "high_fused_EKF-CV": {
+    "cpu_s": 1.5070193500000002,
+    "us_per_cycle_run": 6.266192723492724
+  },
+  "high_fused_UKF-CV": {
+    "cpu_s": 2.304495639999999,
+    "us_per_cycle_run": 9.582102453222449
+  },
+  "high_fused_EKF-CA": {
+    "cpu_s": 1.9292003310000005,
+    "us_per_cycle_run": 8.021622997921
+  },
+  "high_fused_IMM-CVCA": {
+    "cpu_s": 4.416136744999999,
+    "us_per_cycle_run": 18.362314948024945
+  }
+}

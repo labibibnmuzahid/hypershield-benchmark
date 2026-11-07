@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+type: software
+title: "HyperShield benchmark: simulation code and results for space-ground tracking of maneuvering hypersonic glide targets"
+version: "1"
+license: CC-BY-4.0
+repository-code: "https://github.com/labibibnmuzahid/hypershield-benchmark"
+authors:
+  - family-names: "Al Junayed"
+    given-names: "Abdullah"
+    email: junayed.mahin@iubat.education
+    affiliation: "International University of Business Agriculture and Technology (IUBAT)"
+  - family-names: "Ibn Muzahid"
+    given-names: "Labib"
+    email: labib@iubat.education
+    affiliation: "International University of Business Agriculture and Technology (IUBAT)"
+keywords:
+  - hypersonic glide vehicle
+  - multi-sensor fusion
+  - space-based infrared
+  - target tracking
+  - interacting multiple model
+  - filter consistency
+abstract: >-
+  Scenario and sensor generators, four tracking estimators (EKF-CV, UKF-CV, EKF-CA,
+  IMM-CV/CA), track management, metrics, 31 verification tests, analysis and plotting
+  scripts, and the result files behind every table and figure of the paper
+  "Uncertainty-aware space-ground sensor fusion for tracking maneuvering hypersonic
+  targets: A reproducible simulation benchmark".

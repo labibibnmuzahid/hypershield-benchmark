@@ -1,0 +1,236 @@
+{
+  "fusion_OSPA_reduction_vs_IR_pct": [
+    29.0,
+    31.4
+  ],
+  "fusion_OSPA_reduction_vs_radar_pct": [
+    74.7,
+    77.9
+  ],
+  "TTFT_fused_s": [
+    4.0,
+    4.0
+  ],
+  "TTFT_radar_s": [
+    284.0,
+    300.0
+  ],
+  "fused_lower_than_IR_share_pct": [
+    94.8,
+    98.0
+  ],
+  "fused_lower_than_radar_share_pct": [
+    100.0,
+    100.0
+  ],
+  "fusion_max_p_holm": 8.302505899455712e-77,
+  "IMM_vs_EKFCV_fused_rel_reduction_pct": {
+    "low": 3.89,
+    "medium": 3.43,
+    "high": 2.9
+  },
+  "IMM_vs_EKFCV_fused_better_pct": {
+    "low": 83.0,
+    "medium": 76.0,
+    "high": 69.6
+  },
+  "IMM_vs_EKFCA_fused_rel_reduction_pct": {
+    "low": 9.7,
+    "medium": 8.01,
+    "high": 4.52
+  },
+  "IMM_max_p_holm_fused": 6.533927387885346e-07,
+  "UKF_EKF_max_abs_OSPA_diff_km": 0.004794706924535763,
+  "IMM_lowest_OSPA_every_cell": false,
+  "EKFCA_highest_OSPA_every_cell": false,
+  "ANEES_fused_range": [
+    2.01,
+    3.05
+  ],
+  "C95_fused_range": [
+    0.872,
+    0.938
+  ],
+  "IMM_ANEES_reduction_vs_single_fused_pct": [
+    2.9,
+    15.7
+  ],
+  "custody_fused_IMM_pct": [
+    82.7,
+    85.9
+  ],
+  "custody_ir_IMM_pct": [
+    74.6,
+    78.6
+  ],
+  "medium_IMM": {
+    "ir": {
+      "OSPA": 2.127158235313303,
+      "custody": 0.7665738045738045,
+      "continuity": 0.83602079002079,
+      "segments": 3.806,
+      "TTFT_median": 4.0,
+      "ever_tracked": 1.0,
+      "RMSE": 3.998228789806733,
+      "ANEES": 2.6110841922041095,
+      "C50": 0.4763929713572363,
+      "C68": 0.640719575456449,
+      "C90": 0.8450038047776071,
+      "C95": 0.8935855925754614,
+      "C99": 0.9387306466132506,
+      "OSPA_CI": [
+        2.0213521350323607,
+        2.2357903617877617
+      ],
+      "custody_CI": [
+        0.754335343035343,
+        0.7783269230769231
+      ],
+      "ANEES_CI": [
+        2.453888605254346,
+        2.7717664572816445
+      ],
+      "C95_CI": [
+        0.8886435108250371,
+        0.8981642013266921
+      ]
+    },
+    "radar": {
+      "OSPA": 6.476646444925614,
+      "custody": 0.3527567567567568,
+      "continuity": 0.3696590436590437,
+      "segments": 1.4,
+      "TTFT_median": 293.5,
+      "ever_tracked": 0.988,
+      "RMSE": 0.6563727561865864,
+      "ANEES": 2.480418730912682,
+      "C50": 0.4735948168228294,
+      "C68": 0.6482458409727456,
+      "C90": 0.8715453921689932,
+      "C95": 0.9268753585368322,
+      "C99": 0.9755013891544717,
+      "OSPA_CI": [
+        6.360153320660217,
+        6.592882935357267
+      ],
+      "custody_CI": [
+        0.3410319126819127,
+        0.3646933471933472
+      ],
+      "ANEES_CI": [
+        2.1657969005073485,
+        2.8389476431327885
+      ],
+      "C95_CI": [
+        0.9231789637024647,
+        0.9305806811454506
+      ]
+    },
+    "fused": {
+      "OSPA": 1.5112479829854684,
+      "custody": 0.8408482328482328,
+      "continuity": 0.8886237006237007,
+      "segments": 3.068,
+      "TTFT_median": 4.0,
+      "ever_tracked": 1.0,
+      "RMSE": 3.230520795376976,
+      "ANEES": 2.3002961303751754,
+      "C50": 0.47692242904068055,
+      "C68": 0.6444360219732914,
+      "C90": 0.8559757432830792,
+      "C95": 0.905364178294356,
+      "C99": 0.9522211928090812,
+      "OSPA_CI": [
+        1.432087018240157,
+        1.5934870348564805
+      ],
+      "custody_CI": [
+        0.8315587318087319,
+        0.8498448024948024
+      ],
+      "ANEES_CI": [
+        2.1599273880270533,
+        2.4584808952370287
+      ],
+      "C95_CI": [
+        0.9015158720551851,
+        0.909092329147651
+      ]
+    }
+  },
+  "medium_IMM_reduction_vs_IR_pct": 28.954604415553465,
+  "medium_IMM_reduction_vs_radar_pct": 76.66619606556544,
+  "peak_lateral_accel_median_g": {
+    "low": 0.49,
+    "medium": 1.95,
+    "high": 3.91
+  },
+  "mean_visible_satellites": 5.25,
+  "radar_coverage_mean_pct": 39.0,
+  "never_in_radar_coverage_medium_pct": 1.0,
+  "realized_outage_fraction": 0.208,
+  "altitude_range_km": [
+    21.6,
+    56.8
+  ],
+  "us_per_cycle_per_run": {
+    "EKF-CV": [
+      5.1,
+      8.0
+    ],
+    "UKF-CV": [
+      8.3,
+      11.4
+    ],
+    "EKF-CA": [
+      7.4,
+      9.5
+    ],
+    "IMM-CV/CA": [
+      14.9,
+      20.2
+    ]
+  },
+  "main_cpu_seconds_total": 70.3,
+  "tuned": {
+    "qv_cv": 0.001,
+    "qa_ca": 1e-05,
+    "imm_qv": 1e-05,
+    "imm_qa": 1e-05,
+    "imm_ps": 0.9
+  },
+  "table1": {
+    "stagnation_K": [
+      1371.8999999999999,
+      2469.4199999999996,
+      3155.3699999999994
+    ],
+    "wien_um": [
+      3.6225,
+      1.932,
+      1.1592
+    ],
+    "wien_earth_um": 9.66,
+    "critical_density": [
+      2511148258193163.5,
+      1.116065892530295e+17,
+      1.24007321392255e+18,
+      1.5190896870551237e+19
+    ],
+    "radar_los_km": [
+      595.9465426448035,
+      726.9530765741455,
+      1022.6679105939522
+    ],
+    "sat_horizon_km": 3707.0203668175336,
+    "warning_min_30km": [
+      7.997283570672668,
+      4.998302231670418
+    ],
+    "warning_min_20km": [
+      6.556067575850423,
+      4.0975422349065145
+    ]
+  },
+  "n_runs_per_level": 500
+}
